@@ -1,0 +1,51 @@
+package com;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Tata {
+
+	private int id;
+	
+	private String name;
+	       
+	@Autowired
+	@Qualifier(value = "carBean")
+	private Car car;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Car getCar() {
+		return car;
+	}
+
+	public void setCar(Car car) {
+		this.car = car;
+	}
+
+	public Tata(int id, String name, Car car) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.car = car;
+	}
+	
+	public Tata() {
+		
+	}
+	
+}

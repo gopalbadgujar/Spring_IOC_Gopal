@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="stu" class="com.Entity.Student">
+		<property name="sid" value="1"></property>
+		<property name="sname">
+			<list>
+				<value>prakash</value>
+				<value>nitesh</value>
+				<value>rahul</value>
+				<value>karan</value>
+			</list>
+
+		</property>
+
+
+		<property name="srollno">
+
+			<set>
+				<value>25</value>
+				<value>26</value>
+				<value>27</value>
+				<value>28</value>
+			</set>
+
+		</property>
+
+		<property name="school">
+
+			<map>
+				<entry key="1" value="Exponent"></entry>
+				<entry key="2" value="softwarescope"></entry>
+				<entry key="3" value="SoftwareEra"></entry>
+				<entry key="4" value="Anwebtech"></entry>
+			</map>
+		</property>
+
+
+	</bean>
+
+</beans>

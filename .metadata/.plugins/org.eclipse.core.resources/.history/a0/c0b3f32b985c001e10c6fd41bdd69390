@@ -1,0 +1,13 @@
+package com;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+		Connection c1 =  new MySQL();
+		c1.on();
+		
+		Connection c2 = new Oracle();
+		c2.on();
+	}
+}

@@ -1,0 +1,8 @@
+package com;
+
+public class Oracle {
+
+	public void on() {
+		System.out.println("MySQL on method : ");
+	}
+}

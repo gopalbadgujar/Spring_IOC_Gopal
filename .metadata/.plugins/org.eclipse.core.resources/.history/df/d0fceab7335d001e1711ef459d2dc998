@@ -1,0 +1,9 @@
+package com;
+
+public class College {
+
+	private int cid;
+	
+	private String cname;
+	
+}

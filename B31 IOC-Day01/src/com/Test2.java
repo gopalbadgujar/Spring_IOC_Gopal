@@ -1,0 +1,17 @@
+package com;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext apc = new ClassPathXmlApplicationContext("NewFile.xml");
+//		MySQL m = (MySQL) apc.getBean("m");
+//		m.on();
+//		Oracle o = (Oracle) apc.getBean("o");
+//		o.on();
+
+	}
+}

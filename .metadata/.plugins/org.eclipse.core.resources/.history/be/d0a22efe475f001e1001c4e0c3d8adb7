@@ -1,0 +1,23 @@
+package com;
+
+public class AppConfig {
+
+	public Car carBean() {
+
+		Car c = new Car();
+		c.setCid(11);
+		c.setCname("ABCC");
+
+		return c;
+	}
+	
+	public Tata tataBean() {
+		Tata t = new Tata();
+		t.setId(1);
+		t.setName("Harrier");
+		t.setCar(carBean());
+		
+		return t;
+	}
+
+}

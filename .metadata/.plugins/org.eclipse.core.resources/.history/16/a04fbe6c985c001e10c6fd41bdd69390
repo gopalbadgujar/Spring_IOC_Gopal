@@ -1,0 +1,29 @@
+package com;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+		Connection c1 =  new MySQL();
+		c1.on();
+		
+//		Connection c2 = new Oracle();
+//		c2.on();
+		
+		MySQL m = new MySQL();
+		
+		//Containers
+//		-responsible to read XML file
+//		-bean create
+//		-bean life cycle
+//		-bean destoryed
+		
+//		core                 
+//		BeanFactory(I)  
+//		XmlBeanFactory(C)
+//		Need to provide resource because can't read xml directly
+//		Deprecated
+//		Lazy loading
+		
+	}
+}

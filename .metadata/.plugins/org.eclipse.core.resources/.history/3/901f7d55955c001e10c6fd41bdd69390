@@ -1,0 +1,43 @@
+package com;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+//		Connection c= new MySQL();
+//		c.on();
+//		
+//		Connection c1= new Oracle();
+//		c1.on();
+
+//		MySQL m=new MySQL();
+
+		// Containers
+//		-resposible xml read
+//		-bean create
+//		-bean life cycle
+//		-bean distory
+
+//		core                 
+//		BeanFactory(I)  
+//		XmlBeanFactory(C)
+//		Need to provide resource because can't read xml directly
+//		Deprecated
+//		Lazy loading
+
+//		J2EE
+//		ApplicationContext(I)
+//		ClassPathXmlApplicationContext(C)
+//		No need provide resource can read xml directly
+//		New concept
+//		internally it calls BeanFactory
+//		Egar loading
+
+		Resource resource = new ClassPathResource("NewFile.xml");
+		BeanFactory beanFactory = new XmlBeanFactory(resource);
+
+		Connection c1 = (Connection) beanFactory.getBean("m");// object
+//		c1.on();
+
+	}
+}

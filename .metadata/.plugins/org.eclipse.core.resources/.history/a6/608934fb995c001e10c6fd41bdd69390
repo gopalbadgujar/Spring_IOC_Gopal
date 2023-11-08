@@ -1,0 +1,48 @@
+package com;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+//		Connection c1 =  new MySQL();
+//		c1.on();
+//		
+//		Connection c2 = new Oracle();
+//		c2.on();
+		
+//		MySQL m = new MySQL();
+		
+		//Containers
+//		-responsible to read XML file
+//		-bean create
+//		-bean life cycle
+//		-bean destroyed
+		
+//		core                 
+//		BeanFactory(I)  
+//		XmlBeanFactory(C)
+//		Need to provide resource because can't read XML directly
+//		Deprecated
+//		Lazy loading
+		
+//		J2EE
+//		ApplicationContext(I)
+//		ClassPathXmlApplicationContext(C)
+//		No need provide resource can read xml directly
+//		New concept
+//		internally it calls BeanFactory
+//		Egar loading
+		
+		Resource resource = new ClassPathResource("NewFile.xml");
+		BeanFactory beanFactory = new XmlBeanFactory(resource);
+		
+		Connection c = (Connection) beanFactory.getBean("m");
+		c.on();
+		
+	}
+}

@@ -1,0 +1,9 @@
+package com;
+
+public class Address {
+
+	private int aid;
+	
+	private String address;
+	
+}

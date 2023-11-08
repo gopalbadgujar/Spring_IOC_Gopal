@@ -1,0 +1,9 @@
+package com;
+
+public class AppConfig {
+
+	
+	public Car carBean() {
+		
+	}
+}

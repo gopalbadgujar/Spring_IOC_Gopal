@@ -1,0 +1,12 @@
+package com;
+
+public class AppConfig {
+
+	
+	public Car carBean() {
+		
+		Car c = new Car();
+		c.setCid(11);
+		c.setCname("ABCC");
+	}
+}

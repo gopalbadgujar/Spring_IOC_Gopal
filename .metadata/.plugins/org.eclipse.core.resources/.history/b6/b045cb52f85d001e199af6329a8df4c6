@@ -1,0 +1,42 @@
+package com.controller;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.entity.Student;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		ApplicationContext con = new ClassPathXmlApplicationContext("bean.xml");
+		Student s = con.getBean("stu",Student.class);
+
+//		System.out.println(s);
+
+		System.out.println("================Student Names===============");
+		List<String> listStudentNames = s.getSname();
+		for (String string : listStudentNames) {
+			System.out.println(string);
+		}
+
+		System.out.println("===============================================");
+		System.out.println();
+		System.out.println("=================Student Rollnumbers===========");
+		Set<Integer> setStudentRollNumbers = s.getSrollno();
+		for (Integer integer : setStudentRollNumbers) {
+			System.out.println(integer);
+		}
+
+		System.out.println("===============================================");
+		System.out.println();
+		System.out.println("=================Student SchoolNames===========");
+		Map<Integer, String> mapStudentSchoolnames = s.getSchool();
+		Set<Integer> keys = mapStudentSchoolnames.keySet();
+		for (Integer k : keys) {
+			System.out.println(k + " == " + mapStudentSchoolnames.get(k));
+		}
+	}
+}
